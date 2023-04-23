@@ -50,7 +50,7 @@ func ScanSolarStats(r io.Reader)([]SolarStats, error) {
 			if err != nil {
 				log.Fatalf("Could not parse yield total %s : %s", s, err.Error())
 			}
-			solarStats.YieldToday = float64(yieldTotal)
+			solarStats.YieldTotal = float64(yieldTotal)
 		}
 
 	}
