@@ -20,5 +20,4 @@ jobs:
       - name: Build and push Docker image
         run: |
             docker build . --tag feinesfabi/feineapps/solarman:latest
-            docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
             docker push feinesfabi/feineapps/solarman:latest
