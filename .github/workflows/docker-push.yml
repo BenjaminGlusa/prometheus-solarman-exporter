@@ -19,5 +19,5 @@ jobs:
       
       - name: Build and push Docker image
         run: |
-            docker build . --tag feinesfabi/feineapps/solarman:latest
-            docker push feinesfabi/feineapps/solarman:latest
+            docker build . --tag feinesfabi/solarman:latest
+            docker push feinesfabi/solarman:latest
