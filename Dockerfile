@@ -15,6 +15,7 @@ COPY *.go ./
 
 # Build
 RUN CGO_ENABLED=0 GOOS=linux go build -o /solarman
+RUN chmod +x /solarman
 
 # Optional:
 # To bind to a TCP port, runtime parameters must be supplied to the docker command.
